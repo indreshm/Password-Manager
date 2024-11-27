@@ -1,9 +1,12 @@
 {
+  "homepage": "https://indreshm.github.io/Password-Manager",
   "name": "passop",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -11,6 +14,8 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-toastify": "^10.0.5",
@@ -28,5 +33,10 @@
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "vite": "^5.3.1"
-  }
+  },
+  "description": "MERN Stack Project- Password Manager to save password </br>\r ● Designedd and built a responsive user interface using React and Tailwind </br>\r ● Devloped with Node.js, Express.js for managing passwords and user data, ensuring efficient and secure operations </br>\r ● Using MongoDB with mongoose for robust and scalable data storage, implementing data validation and encryption to secure user passwords.",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
